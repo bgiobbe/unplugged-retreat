@@ -7,3 +7,4 @@ dist
 doc
 .DS_Store
 *.swp
+*.code-workspace
