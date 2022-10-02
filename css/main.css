@@ -87,47 +87,79 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+header, footer, aside, section { outline: 1px solid crimson; }
+
+html {
+    background-color: #222;
+    color: white;
+}
+
+/* The margin around headings is causing layout problems! */
+h1,
+h2 {
+    margin: 0;
+}
+
 /***** Base header and footer styles *****/
 
-header,
-footer {
+/* center the header */
+header {
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    width: 100%;
+    padding-top: 10px;
 }
 
 header .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column;
+    width: 100%;
 }
 
 header .header-divider {
+    background-color: #3a3a3a;
+    height: 1px;
     width: 100%;
 }
 
 header nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: row;
+    width: 60%;
 }
 
 nav ul {
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 
+footer {
+    background-color: #202322;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 5px 0;
+}
 
 footer .content-wrapper {
-}
-
-footer .content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    margin: 50px 0;
+    width: 55%;
 }
 
 footer .contact {
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -141,129 +173,138 @@ footer .social {
 
 footer .social-icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    flex-flow: row;
+    width: 200px;
 }
 
-footer .social-icons p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+footer p {
+    margin: 0;
 }
 
-/***** Main styles - homepage *****/
+/*============================
+|  Main styles for homepage
++=============================*/
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    width: 100%;
 }
 
-section .hero-area {
+main .content-wrapper {
+    margin: 50px 0;
+    width: 90%;
+}
+
+.hero-area {
+    /* centers the content-wrapper */
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.hero-area .content-wrapper {
+    align-items: flex-start;
+    height: 500px;
+    width: 100%;
 }
 
 aside {
+    /* centers the content-wrapper */
+    background-color: #527158;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
 }
 
 aside .content-wrapper {
+    margin-top: 0;
 }
 
 .form-description {
+    padding: 1em 0;
 }
 
 .form {
 }
 
-section .features {
+.features {
+    /* center the content-wrapper */
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
 }
 
-.features .content-wrapper {
-}
-
+/* container for articles */
 .features-items {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: row wrap;
+    max-width: 960px;
 }
 
-.feature-items article {
+.features-items article {
+    text-align: center;
+    padding: 50px 60px 0;
+    width: 200px;
 }
 
-section .reviews {
+.features p {
+    margin: 0;
+}
+
+.reviews {
+    background-color: #2a423a;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
 }
 
-/***** Main styles - Aboout page *****/
-
-main .about {
+.reviews p {
+    margin: 0;
 }
 
-.about .content-wrapper {
-}
+/*============================
+|  Main styles for ABOUT page
++=============================*/
 
-section .mission {
+.mission {
+    background-color: #58705A;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    width: 100%;
 }
 
-.mission .content-wrapper {
+/* Map section */
+.map {
+    width: 100%;
 }
 
-.mission-content {
-}
-
-section .map {
-}
-
-section .contact-section {
+/* Contact section */
+.contact-section {
+    background-color: #2F413A;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    width: 100%;
 }
 
-.contact-section .content-wrapper {
+.contact-section p {
+    margin: 0;
 }
 
-.contact-content {
+/*============================
+|  Main styles for FAQ page
++=============================*/
+
+.faq-content {
+    margin-top: 50px;
 }
 
-/***** Main styles - FAQ page *****/
-
-main .faq {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
-main .faq .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
-main .faq .content {
+.faq-content p {
+    margin-top: 0.5em;
 }
 
 
