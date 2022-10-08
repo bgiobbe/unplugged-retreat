@@ -87,16 +87,56 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-header, footer, aside, section { outline: 1px solid crimson; }
-
 html {
     background-color: #222;
-    color: white;
+    font-size: 16px;
+    color: #e2e3ed;
+}
+
+body {
+       font-family: 'Open Sans', sans-serif;
+       font-size: 1em;
+}
+
+ul, 
+ol {
+ 
+}
+
+a {
+     color: #e2e3ed;
+     text-decoration: none;
 }
 
 /* The margin around headings is causing layout problems! */
-h1,
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2em;
+    font-weight: 500;
+    margin: 0;
+}
+
 h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.9em;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin: 0;
+}
+
+h3, 
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15em;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    font-size: 0.9em;
+    line-height: 1.2em;
     margin: 0;
 }
 
@@ -104,7 +144,7 @@ h2 {
 
 /* center the header */
 header {
-    background-color: white;
+    background-color: #202322;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,6 +177,11 @@ header nav {
 nav ul {
     display: flex;
     justify-content: space-around;
+    font: 700 1em 'Open Sans', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
     width: 100%;
 }
 
@@ -186,8 +231,9 @@ footer .social-icons {
     width: 200px;
 }
 
-footer p {
-    margin: 0;
+footer address a {
+    font-size: 0.9em;
+    line-height: 1.2em;
 }
 
 /*============================
@@ -226,6 +272,14 @@ aside {
 
 aside .content-wrapper {
     margin-top: 0;
+}
+
+aside h3 {
+    font-size: 1.1em;
+    padding: 0.3em 0;
+}
+
+aside p {
 }
 
 .form-description {
@@ -315,12 +369,21 @@ aside .content-wrapper {
 |  Main styles for FAQ page
 +=============================*/
 
-.faq-content {
-    margin-top: 50px;
+.faq {
+    background-color: #527158;
 }
 
-.faq-content p {
-    margin-top: 0.5em;
+.faq h2 {
+    line-height: 1.0em;
+}
+
+.faq-content {
+    padding-top: 2rem;
+    padding-bottom: 0.5em;
+}
+
+.faq h3 {
+    padding: 0.5em 0;
 }
 
 
