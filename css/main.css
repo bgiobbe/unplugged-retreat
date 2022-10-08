@@ -155,12 +155,18 @@ footer .content-wrapper {
     align-items: flex-start;
     flex-flow: row wrap;
     margin: 50px 0;
-    width: 55%;
+    width: 90%;
+}
+
+footer h2 {
+    margin-bottom: 1em;
 }
 
 footer .contact {
     margin-bottom: 30px;
+    padding: 0 60px;
     text-align: center;
+    width: 200px;
 }
 
 footer .contact address {
@@ -168,6 +174,7 @@ footer .contact address {
 }
 
 footer .social {
+    padding: 0 60px;
     text-align: center;
 }
 
@@ -214,6 +221,7 @@ aside {
     background-color: #527158;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 aside .content-wrapper {
@@ -231,6 +239,7 @@ aside .content-wrapper {
     /* center the content-wrapper */
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 /* container for articles */
@@ -256,6 +265,13 @@ aside .content-wrapper {
     background-color: #2a423a;
     display: flex;
     justify-content: center;
+    flex-flow: center;
+}
+
+.reviews article {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-flow: row wrap;
 }
 
@@ -331,7 +347,7 @@ aside .content-wrapper {
  */
 
 .sr-only {
-  border: 0;
+  border: 0;https://scratch.mit.edu/projects/708102653/editor
   clip: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
@@ -396,9 +412,148 @@ aside .content-wrapper {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+/*--------------------
+ * Tablet styles here
+ *--------------------*/
+@media only screen and (min-width: 768px) {
+    
+    /* Header and Footer */
+    
+    header .content-wrapper {
+        justify-content: space-between;
+        flex-flow: row;
+        width: 85%;
+    }
+
+    header .header-divider {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-flow: row;
+        width: 20%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    footer .content-wrapper {
+        justify-content: space-between;
+        margin: 100px 0;
+        width: 85%;
+    }
+
+    /* Homepage */
+
+    main .content-wrapper {
+        margin: 100px 0;
+        width: 85%;
+    }
+
+    aside .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 50px 0;
+    }
+
+    .form-description {
+        padding: 0;
+        width: 40%;
+    }
+
+    .form {
+        width: 50%;
+    }
+
+    .reviews img {
+        width: 50%;
+    }
+
+    .review-text {
+        box-sizing: border-box;
+        padding-left: 10px;
+        width: 50%;
+    }
+
+    /* About page */
+
+    .mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+
+    .mission-content p {
+        margin: 0;
+        width: 45%;
+    }
+
+    .contact-section .contact-content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+
+    .general-info {
+        width: 50%;
+    }
+
+    .facilitator {
+        box-sizing: border-box;
+        padding-left: 30px;
+        width: 50%;
+    }
+
+    /*  FAQ page */
+
+    .faq .faq-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
+    .faq-content {
+        margin-top: 1rem;
+        width: 47%;
+    }
+
+
+} /* end of tablet styles */
+ 
+/*--------------------
+ * Desktop styles here
+ *--------------------*/
+@media only screen and (min-width: 1200px) {
+
+    header .content-wrapper,
+    footer .content-wrapper,
+    main .content-wrapper {
+        width: 80%;
+    }
+
+    
+    .form-description,
+    .form {
+        padding:0 80px;
+    }
+    
+    .review-text {
+        padding-left: 20px;
+    }
+
+} /* end of desktop styles */
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
