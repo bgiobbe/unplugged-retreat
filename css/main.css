@@ -111,16 +111,17 @@ a {
 /* The margin around headings is causing layout problems! */
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.2em;
+    font-size: 2.3em;
     font-weight: 500;
+    line-height: 1.3em;
     margin: 0;
 }
 
 h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.9em;
+    font-size: 1.67em;
     font-weight: 500;
-    line-height: 1.2em;
+    line-height: 1.3em;
     margin: 0;
 }
 
@@ -134,11 +135,20 @@ h4 {
     padding: 1em 0;
 }
 
+img {
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
 p {
     font-size: 0.9em;
     line-height: 1.2em;
     margin: 0;
 }
+
 
 /***** Base header and footer styles *****/
 
@@ -149,7 +159,6 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 10px;
 }
 
 header .content-wrapper {
@@ -158,6 +167,15 @@ header .content-wrapper {
     align-items: center;
     flex-flow: column;
     width: 100%;
+}
+
+header figure {
+    margin: 10px 0;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 header .header-divider {
@@ -171,6 +189,7 @@ header nav {
     justify-content: center;
     align-items: center;
     flex-flow: row;
+    margin: 15px 0;
     width: 60%;
 }
 
@@ -254,6 +273,8 @@ main .content-wrapper {
 }
 
 .hero-area {
+    background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat;
+    background-size: cover;
     /* centers the content-wrapper */
     display: flex;
     justify-content: center;
@@ -264,9 +285,10 @@ main .content-wrapper {
 
 aside {
     /* centers the content-wrapper */
-    background-color: #527158;
     display: flex;
     justify-content: center;
+    background-color: #527158;
+    margin-top: -130px;
     width: 100%;
 }
 
@@ -276,17 +298,41 @@ aside .content-wrapper {
 
 aside h3 {
     font-size: 1.1em;
-    padding: 0.3em 0;
+    padding: 0.4em 0;
 }
 
 aside p {
+    font-size: 1em;
 }
 
 .form-description {
     padding: 1em 0;
 }
 
-.form {
+aside .form {
+    margin-top: 0.8em;
+}
+   
+input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+}
+
+input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .features {
@@ -306,6 +352,7 @@ aside p {
 }
 
 .features-items article {
+    font-size: 0.9em;
     text-align: center;
     padding: 50px 60px 0;
     width: 200px;
@@ -327,6 +374,7 @@ aside p {
     justify-content: center;
     align-items: flex-start;
     flex-flow: row wrap;
+    margin-top: 20px;
 }
 
 .reviews p {
@@ -479,7 +527,14 @@ aside p {
  * Tablet styles here
  *--------------------*/
 @media only screen and (min-width: 768px) {
-    
+
+    h1 {
+        font-size: 2.67em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+
     /* Header and Footer */
     
     header .content-wrapper {
@@ -502,7 +557,7 @@ aside p {
 
     nav ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100%;
     }
 
@@ -599,13 +654,20 @@ aside p {
  *--------------------*/
 @media only screen and (min-width: 1200px) {
 
+    h1 {
+        font-size: 3.5em;
+    }
+
+    .hero-area .content-wrapper {
+        margin: 40px 0;
+    }
+
     header .content-wrapper,
     footer .content-wrapper,
     main .content-wrapper {
         width: 80%;
     }
 
-    
     .form-description,
     .form {
         padding:0 80px;
