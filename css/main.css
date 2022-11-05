@@ -399,6 +399,22 @@ input[type=button] {
     width: 100%;
 }
 
+.map figure {
+    width: 100%;
+    height: 0; 
+    padding-bottom: 125%; 
+    overflow: hidden;
+    position: relative;
+}
+ 
+.map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+}
+
 /* Contact section */
 .contact-section {
     background-color: #2F413A;
@@ -523,9 +539,9 @@ input[type=button] {
    Modify as content requires.
    ========================================================================== */
 
-/*--------------------
+/*-------------------------------
  * Tablet styles here
- *--------------------*/
+ *------------------------------*/
 @media only screen and (min-width: 768px) {
 
     h1 {
@@ -543,6 +559,9 @@ input[type=button] {
         width: 85%;
     }
 
+    header figure {
+        width: 35%;
+    }
     header .header-divider {
         display: none;
     }
@@ -649,9 +668,9 @@ input[type=button] {
 
 } /* end of tablet styles */
  
-/*--------------------
+/*-------------------------------
  * Desktop styles here
- *--------------------*/
+ *------------------------------*/
 @media only screen and (min-width: 1200px) {
 
     h1 {
