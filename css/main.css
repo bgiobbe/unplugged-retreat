@@ -633,6 +633,10 @@ input[type=button] {
         width: 45%;
     }
 
+    .map figure {
+        padding-bottom: 45.6%; 
+    }
+
     .contact-section .contact-content {
         display: flex;
         justify-content: center;
@@ -695,6 +699,13 @@ input[type=button] {
     .review-text {
         padding-left: 20px;
     }
+
+    /* About page */
+
+    .map figure {
+        padding-bottom: 37.5%; 
+    }
+
 
 } /* end of desktop styles */
 
