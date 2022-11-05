@@ -250,6 +250,17 @@ footer .social-icons {
     width: 200px;
 }
 
+footer .social-icons p {
+    font-size: 1.2em;
+    background-color: #58705a;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 footer address a {
     font-size: 0.9em;
     line-height: 1.2em;
@@ -360,6 +371,11 @@ input[type=button] {
 
 .features p {
     margin: 0;
+}
+
+.features i {
+	font-size: 4.5em;
+    margin-bottom: 40px;
 }
 
 .reviews {
