@@ -109,30 +109,30 @@ a {
 }
 
 /* The margin around headings is causing layout problems! */
-h1 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.3em;
     font-weight: 500;
-    line-height: 1.3em;
     margin: 0;
+}
+    
+h1 {
+    font-size: 2.3125em;
+    line-height: 1.125em;
 }
 
 h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.67em;
-    font-weight: 500;
-    line-height: 1.3em;
-    margin: 0;
+    font-size: 1.9375em;
+    line-height: 1.1875em;
 }
 
 h3, 
 h4 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.15em;
-    font-weight: 500;
-    line-height: 1.2em;
-    margin: 0;
-    padding: 1em 0;
+    font-size: 1.125em;
+    padding: 0.4375em 0;
+    line-height: 1.25em;
 }
 
 img {
@@ -144,8 +144,8 @@ figure {
 }
 
 p {
-    font-size: 0.9em;
-    line-height: 1.2em;
+    font-size: 0.875em;
+    line-height: 1.25em;
     margin: 0;
 }
 
@@ -170,7 +170,7 @@ header .content-wrapper {
 }
 
 header figure {
-    margin: 10px 0;
+    margin: 15px 0 10px;
     width: 60%;
     display: flex;
     justify-content: center;
@@ -196,7 +196,7 @@ header nav {
 nav ul {
     display: flex;
     justify-content: space-around;
-    font: 700 1em 'Open Sans', sans-serif;
+    font: 700 1.125em 'Open Sans', sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -222,6 +222,7 @@ footer .content-wrapper {
     width: 90%;
 }
 
+/* h2 or h3 */
 footer h2 {
     margin-bottom: 1em;
 }
@@ -252,19 +253,19 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.2em;
     background-color: #58705a;
     border-radius: 50%;
     height: 40px;
     width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 footer address a {
-    font-size: 0.9em;
-    line-height: 1.2em;
+    font-size: 0.875em;
+    line-height: 1.3em;
 }
 
 /*============================
@@ -280,7 +281,7 @@ main {
 }
 
 main .content-wrapper {
-    margin: 50px 0;
+    margin: 48px 0;
     width: 90%;
 }
 
@@ -308,39 +309,39 @@ aside .content-wrapper {
     margin-top: 0;
 }
 
+/*
 aside h3 {
-    font-size: 1.1em;
-    padding: 0.4em 0;
+    font-size: 1.125em;
+    padding: 0.4375em 0;
 }
-
-aside p {
-    font-size: 1em;
-}
+*/
 
 .form-description {
     padding: 1em 0;
 }
 
 aside .form {
-    margin-top: 0.8em;
+    margin-top: 0.625em;
 }
    
 input[type=text] {
+    background-color: #e1e2ea;
     box-sizing: border-box;
     width: 100%;
     color: #2a423a;
     font-style: italic;
-    padding: 1em;
+    margin-top: .25em;
+    padding: 0.75em;
 }
 
 input[type=button] {
     width: 100%;
-    padding: 20px 0;
+    padding: 16px 0;
     margin-top: 20px;
     background-color: #2a423a;
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
     font-weight: 500;
-    font-size: 1.125em;
+    font-size: 1.0625em;
     color: #e2e3ed;
     border: none;
     text-align: center;
@@ -362,12 +363,13 @@ input[type=button] {
     align-items: flex-start;
     flex-flow: row wrap;
     max-width: 960px;
+    padding-bottom: 16px;
 }
 
 .features-items article {
-    font-size: 0.9em;
+    font-size: 0.9375em;
     text-align: center;
-    padding: 50px 60px 0;
+    padding: 60px 60px 0;
     width: 200px;
 }
 
@@ -384,8 +386,9 @@ input[type=button] {
     background-color: #2a423a;
     display: flex;
     justify-content: center;
-    flex-flow: center;
+    width: 100%;
 }
+
 
 .reviews article {
     display: flex;
@@ -412,6 +415,13 @@ input[type=button] {
     width: 100%;
 }
 
+.mission h2 {
+    font-size: 1.875em;
+}
+
+.mission p {
+    padding-top: 1em;
+}
 /* Map section */
 .map {
     width: 100%;
@@ -444,7 +454,12 @@ input[type=button] {
 }
 
 .contact-section p {
+    font-style: normal;
     margin: 0;
+}
+
+.facilitator {
+    padding-top: 7px;
 }
 
 /*============================
@@ -464,7 +479,7 @@ input[type=button] {
     padding-bottom: 0.5em;
 }
 
-.faq h3 {
+.faq-content h3 {
     padding: 0.5em 0;
 }
 
@@ -563,13 +578,21 @@ input[type=button] {
 @media only screen and (min-width: 768px) {
 
     h1 {
-        font-size: 2.67em;
-    }
-    h2 {
-        font-size: 2em;
+        font-size: 2.875em;
+        line-height: 1.06em;
     }
 
-    /* Header and Footer */
+    h2 {
+        font-size: 2.25em;
+        line-height: 1.15em;
+    }
+
+    h3,
+    h4 {
+        font-size: 1.75em;
+    }
+
+/* Tablet Header and Footer */
     
     header .content-wrapper {
         justify-content: space-between;
@@ -578,6 +601,7 @@ input[type=button] {
     }
 
     header figure {
+        margin: 30px 0 30px;
         width: 35%;
     }
     header .header-divider {
@@ -594,20 +618,28 @@ input[type=button] {
 
     nav ul {
         display: flex;
+        font-size: 1em;
         justify-content: space-around;
         width: 100%;
     }
 
     footer .content-wrapper {
         justify-content: space-between;
-        margin: 100px 0;
+        margin: 70px 0;
         width: 85%;
     }
 
-    /* Homepage */
+    footer h3 {
+        padding: 20px 0 30px 0;
+    }
+
+    footer .social-icons {
+        padding-top: 7px;
+    }
+    /* Tablet Homepage */
 
     main .content-wrapper {
-        margin: 100px 0;
+        margin: 90px 0;
         width: 85%;
     }
 
@@ -615,7 +647,7 @@ input[type=button] {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        margin: 50px 0;
+        margin: 34px 0;
     }
 
     .form-description {
@@ -627,7 +659,20 @@ input[type=button] {
         width: 50%;
     }
 
-    .reviews img {
+    .features-items article {
+        padding: 30px 60px 18px;
+    }
+    
+    .features i {
+        font-size: 5em;
+        margin-bottom: 30px;
+    }
+
+   .features-items article p {
+        font-size: 0.9375em;
+    }
+
+    .reviews figure {
         width: 50%;
     }
 
@@ -637,17 +682,21 @@ input[type=button] {
         width: 50%;
     }
 
-    /* About page */
+    /* Tablet About page */
+
+    .mission h2 {
+        font-size: 2.3125em;
+    }
 
     .mission-content {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        margin-top: 2rem;
+        margin-top: 1.75em;
     }
 
     .mission-content p {
-        margin: 0;
+        padding-top: 0;
         width: 45%;
     }
 
@@ -655,9 +704,13 @@ input[type=button] {
         padding-bottom: 45.6%; 
     }
 
+    .contact-section h2 {
+        line-height: 1.3125em;
+    }
+
     .contact-section .contact-content {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: flex-start;
         margin-top: 2rem;
     }
@@ -668,11 +721,12 @@ input[type=button] {
 
     .facilitator {
         box-sizing: border-box;
+        padding-top: 0;
         padding-left: 30px;
         width: 50%;
     }
 
-    /*  FAQ page */
+    /*  Tablet FAQ page */
 
     .faq .faq-items {
         display: flex;
@@ -683,10 +737,15 @@ input[type=button] {
     }
 
     .faq-content {
-        margin-top: 1rem;
+        padding-top: 20px;
         width: 47%;
     }
 
+    .faq-content h3 {
+        font-size: 0.875em;
+        font-weight: 500;
+        padding: 1em 0;
+    }
 
 } /* end of tablet styles */
  
@@ -697,6 +756,18 @@ input[type=button] {
 
     h1 {
         font-size: 3.5em;
+        line-height: 1.25em;
+        width: 80%;
+    }
+
+    h2,
+    .mission h2 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.125em;
+        line-height: 1.3125em;
     }
 
     .hero-area .content-wrapper {
@@ -709,21 +780,81 @@ input[type=button] {
         width: 80%;
     }
 
+    header figure {
+        margin: 20px 0 25px;
+        width: 30%;
+    }
+
+    nav ul {
+        font-size: 1.125em;
+    }
+
     .form-description,
     .form {
         padding:0 80px;
+        width: 35%;
     }
     
-    .review-text {
-        padding-left: 20px;
+    .features h2,
+    .reviews h2 {
+        font-size: 2.25em;
+        padding: 7px 0 36px;
+    }
+    .features-items article {
+        padding: 60px 60px 0;
     }
 
-    /* About page */
+    .features-items article p {
+        font-size: 1.1875em;
+        line-height: 1.3125em;
+    }
+
+    .features i {
+        font-size: 4em;
+        margin-bottom: 24px;
+    }
+    
+    .review-articles {
+        max-width: 940px;
+    }
+
+    .reviews article {
+        margin-top: 80px;
+    }
+
+    .review-text {
+        padding-left: 40px;
+    }
+
+    .review-text h3 {
+        padding: 0 0 10px;
+    }
+
+    /* Desktop About page */
 
     .map figure {
         padding-bottom: 37.5%; 
     }
 
+    .contact-section .contact-content {
+        margin: 1em 0;
+    }
+
+    .contact-content h3 {
+        padding:  0 0 1em;
+    }
+
+    /* Desktop FAQ page */
+
+    .faq-content h3 {
+        padding: 0.75em 0;
+    }
+
+    .faq-content h3,
+    .faq-content p {
+        font-size: 1.125em;
+        line-height: 1em;
+    }
 
 } /* end of desktop styles */
 
