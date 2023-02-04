@@ -125,7 +125,7 @@ h1 {
 
 h2 {
     font-size: 1.9375em;
-    line-height: 1.1875em;
+    line-height: 1.125em;
 }
 
 h3, 
@@ -286,8 +286,8 @@ main .content-wrapper {
 }
 
 .hero-area {
-    background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat;
-    background-size: cover;
+    background: url('../img/jake-melara-30679-unsplash.jpg') top center no-repeat;
+    background-size: 280%;
     /* centers the content-wrapper */
     display: flex;
     justify-content: center;
@@ -301,7 +301,7 @@ aside {
     display: flex;
     justify-content: center;
     background-color: #527158;
-    margin-top: -130px;
+    margin-top: 0;
     width: 100%;
 }
 
@@ -309,43 +309,33 @@ aside .content-wrapper {
     margin-top: 0;
 }
 
-/*
-aside h3 {
-    font-size: 1.125em;
-    padding: 0.4375em 0;
-}
-*/
-
 .form-description {
     padding: 1em 0;
 }
-
-aside .form {
-    margin-top: 0.625em;
-}
-   
+  
 input[type=text] {
     background-color: #e1e2ea;
     box-sizing: border-box;
     width: 100%;
     color: #2a423a;
+    font-size: 0.875em;
     font-style: italic;
     margin-top: .25em;
-    padding: 0.75em;
+    padding: 1em;
 }
-
+ 
 input[type=button] {
-    width: 100%;
-    padding: 16px 0;
-    margin-top: 20px;
-    background-color: #2a423a;
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 1.0625em;
-    color: #e2e3ed;
-    border: none;
-    text-align: center;
-    text-transform: uppercase;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .features {
@@ -389,6 +379,14 @@ input[type=button] {
     width: 100%;
 }
 
+.reviews h2 {
+    font-size: 1.875em;
+    line-height: 1em;
+}
+
+.reviews h3 {
+    padding: 1em 0;
+}
 
 .reviews article {
     display: flex;
@@ -589,7 +587,7 @@ input[type=button] {
 
     h3,
     h4 {
-        font-size: 1.75em;
+        font-size: 1.5em;
     }
 
 /* Tablet Header and Footer */
@@ -643,6 +641,12 @@ input[type=button] {
         width: 85%;
     }
 
+    .hero-area {
+        background-position: center;
+        background-size: 160%;
+        height: 600px;
+    }
+    
     aside .content-wrapper {
         display: flex;
         justify-content: space-between;
@@ -659,6 +663,15 @@ input[type=button] {
         width: 50%;
     }
 
+    input[type=text] {
+        font-size: 0.875em;
+        padding: 0.625em;
+    }
+
+    input[type=button] {
+        padding: 10px 0;
+    }
+
     .features-items article {
         padding: 30px 60px 18px;
     }
@@ -670,6 +683,15 @@ input[type=button] {
 
    .features-items article p {
         font-size: 0.9375em;
+    }
+
+    .reviews h2 {
+        font-size: 2.25em;
+        line-height: 1.125em;
+    }
+    
+    .reviews h3 {
+        padding-top: 0;
     }
 
     .reviews figure {
@@ -765,9 +787,18 @@ input[type=button] {
         font-size: 3em;
     }
 
+    h3,
+    h4 {
+        font-size: 1.875em;
+    }
+
     p {
         font-size: 1.125em;
         line-height: 1.3125em;
+    }
+    
+    .hero-area {
+        background-size: cover;
     }
 
     .hero-area .content-wrapper {
@@ -789,12 +820,27 @@ input[type=button] {
         font-size: 1.125em;
     }
 
-    .form-description,
+    footer address a {
+        font-size: 1.125em;
+        line-height: 1.3em;
+    }
+    
+       .form-description,
     .form {
         padding:0 80px;
         width: 35%;
     }
-    
+
+    input[type=text] {
+        font-size: 1em;
+        padding: 0.75em;
+    }
+
+    input[type=button] {
+        font-size: 1.5em;
+        padding: 12px 0;
+    }
+
     .features h2,
     .reviews h2 {
         font-size: 2.25em;
