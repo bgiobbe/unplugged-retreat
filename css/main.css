@@ -98,11 +98,6 @@ body {
        font-size: 1em;
 }
 
-ul, 
-ol {
- 
-}
-
 a {
      color: #e2e3ed;
      text-decoration: none;
@@ -131,7 +126,6 @@ h2 {
 h3, 
 h4 {
     font-size: 1.125em;
-    padding: 0.4375em 0;
     line-height: 1.25em;
 }
 
@@ -210,7 +204,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    padding: 5px 0;
+    padding-bottom: 7px;
 }
 
 footer .content-wrapper {
@@ -222,22 +216,21 @@ footer .content-wrapper {
     width: 90%;
 }
 
-/* h2 or h3 */
-footer h2 {
-    margin-bottom: 1em;
-}
-
 footer .contact {
-    margin-bottom: 30px;
+    margin-bottom: 42px;
     padding: 0 60px;
     text-align: center;
     width: 200px;
 }
 
 footer .contact address {
+    font-size: 0.875em;
     font-style: normal;
+    line-height: 1.25em;
+    margin-top: 1em;
     text-align: center;
 }
+
 
 footer .social {
     padding: 0 60px;
@@ -249,6 +242,7 @@ footer .social-icons {
     justify-content: space-between;
     align-items: center;
     flex-flow: row;
+    margin-top: 1em;
     width: 200px;
 }
 
@@ -263,10 +257,6 @@ footer .social-icons p {
     width: 40px;
 }
 
-footer address a {
-    font-size: 0.875em;
-    line-height: 1.3em;
-}
 
 /*============================
 |  Main styles for homepage
@@ -309,10 +299,16 @@ aside .content-wrapper {
     margin-top: 0;
 }
 
+
 .form-description {
-    padding: 1em 0;
+    padding: 1.75em 0;
 }
-  
+
+.form-description p {
+    padding: 0.5em 0;
+}
+
+
 input[type=text] {
     background-color: #e1e2ea;
     box-sizing: border-box;
@@ -320,7 +316,7 @@ input[type=text] {
     color: #2a423a;
     font-size: 0.875em;
     font-style: italic;
-    margin-top: .25em;
+    margin-top: 0.875em;
     padding: 1em;
 }
  
@@ -344,6 +340,7 @@ input[type=button] {
     justify-content: center;
     width: 100%;
     background: url("../img/rawpixel-800820-unsplash1.jpg") center no-repeat;
+    background-size: cover;
 }
 
 /* container for articles */
@@ -364,7 +361,7 @@ input[type=button] {
 }
 
 .features p {
-    margin: 0;
+    text-align: center;
 }
 
 .features i {
@@ -376,6 +373,7 @@ input[type=button] {
     background-color: #2a423a;
     display: flex;
     justify-content: center;
+    flex-flow: row wrap;
     width: 100%;
 }
 
@@ -389,15 +387,7 @@ input[type=button] {
 }
 
 .reviews article {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-flow: row wrap;
     margin-top: 20px;
-}
-
-.reviews p {
-    margin: 0;
 }
 
 /*============================
@@ -426,19 +416,19 @@ input[type=button] {
 }
 
 .map figure {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 125%; 
     width: 100%;
     height: 0; 
-    padding-bottom: 125%; 
-    overflow: hidden;
-    position: relative;
 }
  
 .map iframe {
-    width: 100%;
-    height: 100%;
     position: absolute; 
     top: 0; 
     left: 0; 
+    width: 100%;
+    height: 100%;
 }
 
 /* Contact section */
@@ -505,7 +495,7 @@ input[type=button] {
  */
 
 .sr-only {
-  border: 0;https://scratch.mit.edu/projects/708102653/editor
+  border: 0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
@@ -571,7 +561,7 @@ input[type=button] {
    ========================================================================== */
 
 /*-------------------------------
- * Tablet styles here
+ * TABLET STYLES here
  *------------------------------*/
 @media only screen and (min-width: 768px) {
 
@@ -652,6 +642,7 @@ input[type=button] {
         justify-content: space-between;
         align-items: flex-start;
         margin: 34px 0;
+        max-width: 640px;
     }
 
     .form-description {
@@ -660,7 +651,7 @@ input[type=button] {
     }
 
     .form {
-        width: 50%;
+        width: 40%;
     }
 
     input[type=text] {
@@ -772,7 +763,7 @@ input[type=button] {
 } /* end of tablet styles */
  
 /*-------------------------------
- * Desktop styles here
+ * DESKTOP STYLES here
  *------------------------------*/
 @media only screen and (min-width: 1200px) {
 
