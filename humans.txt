@@ -3,11 +3,11 @@
 
 # TEAM
 
-    Beth Giobbe -- front-end developer -- https://github.com/bgiobbe
+    <name> -- <role> -- <twitter>
 
 # THANKS
 
-    Skillcrush -- site design, technical education
+    <name>
 
 # TECHNOLOGY COLOPHON
 
