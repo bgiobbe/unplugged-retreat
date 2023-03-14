@@ -135,7 +135,7 @@ header .content-wrapper {
 .header-divider {
   width: 100%;
   height: 1px;
-  padding: 10px 0 20px 0;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -153,15 +153,15 @@ header nav ul {
 }
 
 footer {
-  flex-flow: column;
+  flex-direction: column;
 }
 
 footer .content-wrapper {
   width: 55%;
 }
 
-footer .social {
-  padding-top: 50px;
+footer .contact {
+  margin-bottom: 50px;
 }
 
 footer .social-icons {
@@ -221,7 +221,7 @@ aside .form {
 }
 
 .features-items article {
-  width: 60%;
+  width: 63%;
   margin: 30px 0;
 }
 
@@ -236,8 +236,7 @@ aside .form {
 }
 
 .reviews h2 {
-  margin: 0;
-  padding-bottom: 40px;
+  margin: 0 0 40px 0;
 }
 
 /* ---------------------------------------------------------------------
@@ -380,7 +379,7 @@ aside .form {
 @media only screen and (min-width: 768px) {
   
   .content-wrapper {
-    width: 640px;
+    max-width: 640px;
     margin: 100px 0;
   }
   
@@ -393,6 +392,7 @@ aside .form {
   }
   
   header .content-wrapper {
+    width: 100%;
     justify-content: space-between;
   }
 
@@ -410,7 +410,7 @@ aside .form {
   }
 
   footer .content-wrapper {
-    width: 520px;
+    width: 65%;
   }
 
   footer .footer-content {
@@ -420,12 +420,10 @@ aside .form {
   }
 
   footer .contact {
-    width: 130px;
-    margin: 0;
+    margin-bottom: 0;
   }
 
   footer .social {
-    padding-top: 0;
     width: 192px;
   }
 
@@ -437,14 +435,9 @@ aside .form {
      Tablet:  Home Page
      -------------------------------------*/
 
-  .hero-area  h1 {
+  .hero-area h1 {
     margin: 0;
-    width: 512px;
-  }
-
-  aside,
-  aside  * {
-    outline: 1px dotted red;
+    width: 80%;
   }
   
   aside .content-wrapper {
@@ -452,6 +445,7 @@ aside .form {
     justify-content: space-between;
     align-items: flex-start;
     flex-flow: row;
+    margin: 50px 0;
   }
 
   aside .form-description,
@@ -464,20 +458,26 @@ aside .form {
     margin-bottom: 20px;
   }
 
+  .features .features-items {
+    align-items: flex-start;
+  }
+  
   .features-items article {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    flex-basis: 192px;
-    margin: 30px 64px;
+    flex-basis: 50%;
+  }
+
+  .features .features-item-description {
+    width: 50%;
   }
 
   .reviews article {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-flow: row nowrap;
   }
 
   .reviews figure,
@@ -524,15 +524,81 @@ aside .form {
     .faq-content {
       flex-basis: 45%;
     }
-}
+} /* end of tablet styles */
  
 /* ---------------------------------------------------------------------
                         DESKTOP STYLES 
    --------------------------------------------------------------------- */
 
 @media only screen and (min-width: 1200px) {
-  /*Desktop styles here*/
-}
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* -------------------------------------
+     Desktop:  Header and Footer Styles
+     -------------------------------------*/
+
+  header {
+    padding: 15px 0;
+  }
+  
+  footer .content-wrapper {
+    width: 960px;
+  }
+  /* -------------------------------------
+     Desktop:  Home Page Styles
+     -------------------------------------*/
+
+  .hero-area h1 {
+    width: 70%;
+  }
+
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .form-description,
+  aside .form {
+    width: 30%;
+  }
+
+  .features h2 {
+    width: 90%;
+  }
+
+  }.features-items article {
+    flex-basis: 33%;
+  }
+
+  .features .features-item-description {
+    width: 60%;
+  }
+
+  .reviews h2 {
+    margin: 0 0 50px 0;
+  }
+  
+  .reviews .review-content {
+    width: 42%;
+  }
+
+  /* -------------------------------------
+     Desktop:  About Page Styles
+     -------------------------------------*/
+  
+  .mission .content-wrapper h2 {
+    width: 90%;
+  }
+
+  /* -------------------------------------
+     Desktop:  FAQ Page Styles
+     -------------------------------------*/
+
+  /* none needed */
+
+} /* end of desktop styles */
   
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
