@@ -666,6 +666,10 @@ input[type=button] {
       width: 45%;
   }
 
+  .map figure {
+    padding-bottom: 45.5%;
+  }
+
   .contact-section .content-wrapper h2 {
       width: 90%;
   }
@@ -780,6 +784,10 @@ input[type=button] {
     width: 90%;
   }
 
+  .map figure {
+    padding-bottom: 35.5%;
+  }
+  
   /* -------------------------------------
      Desktop:  FAQ Page Styles
      -------------------------------------*/
