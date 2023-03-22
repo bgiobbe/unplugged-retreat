@@ -233,6 +233,9 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
 }
 
 footer .social-icons p a {
@@ -240,6 +243,10 @@ footer .social-icons p a {
   font-size: 1.3125em;
   justify-content: center;
   align-items: center;
+}
+
+footer .social-icons i {
+  color: #e2e3ed;
 }
 
 footer .copyright {
@@ -326,12 +333,9 @@ input[type=button] {
   margin: 30px 0;
 }
 
-.features-items .fontawesome-icon {
-  font-size: 3.75em;
-}
-
-.features-item-description {
-  padding-top: 40px;
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .reviews {
