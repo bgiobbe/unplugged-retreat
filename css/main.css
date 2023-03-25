@@ -141,7 +141,6 @@ ol {
 p {
   font-size: 0.875em;
   line-height: 1.125rem;
-  margin: 0;
 }
 
 .content-wrapper {
@@ -213,6 +212,10 @@ footer .content-wrapper {
   width: 55%;
 }
 
+footer p {
+  margin: 0;
+}
+
 footer .contact {
   margin-bottom: 50px;
   text-align: center;
@@ -263,7 +266,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  height: 500px;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -291,6 +294,10 @@ input[type=text] {
   color: #2a423a;
   font-style: italic;
   padding: 1em;
+}
+input[type=text]::placeholder {
+  color: #2a423a;
+  opacity: 1;
 }
  
 input[type=button] {
@@ -327,6 +334,11 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
+.features p {
+  margin: 0;
+  text-align: center;
+}
+
 .features-items article {
   text-align: center;
   width: 63%;
@@ -360,6 +372,10 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.mission p {
+  margin-bottom: 1em;
 }
 
 .map figure {
@@ -519,7 +535,7 @@ input[type=button] {
 
   h2 {
     font-size: 2.25em;
-    line-height: 3rem;
+    line-height: 1.333;
   }
 
   h3 {
@@ -559,11 +575,11 @@ input[type=button] {
 
   header nav {
     flex-wrap: nowrap;
-    width: 20%;
+    width: 25%;
   }
 
   header nav ul {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   footer .content-wrapper {
@@ -596,6 +612,10 @@ input[type=button] {
      Tablet:  Home Page
      -------------------------------------*/
 
+  .hero-area {
+    min-height: 600px;
+  }
+  
   .hero-area h1 {
     font-size: 3em;
     line-height: 3rem;
@@ -750,7 +770,8 @@ input[type=button] {
      -------------------------------------*/
 
   .hero-area h1 {
-    font-size: 60px;
+    font-size: 3.75em;
+    line-height: 3.75rem;
     width: 70%;
   }
 
@@ -783,7 +804,8 @@ input[type=button] {
      Desktop:  About Page Styles
      -------------------------------------*/
   
-  .mission .content-wrapper h2 {
+  .mission h2,
+  .contact-section h2 {
     font-size: 3em;
     width: 90%;
   }
